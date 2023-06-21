@@ -1,5 +1,5 @@
 # Numerical Calculus Assignment
-This file aims to teach how to solve problems involving large systems of equations using numerical methods.
+This file aims the learning and practice of how to solve problems involving large systems of equations using numerical methods.
 As part of the assignment, we were required to solve four questions.
 
 ## Summary of each question
