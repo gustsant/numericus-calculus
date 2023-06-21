@@ -1,10 +1,9 @@
 # Numerical Calculus Assignment
-This is a file with the purpose of learning how to solve large system of equations problems with numerical solutions. 
-As part of the assignment, we had to solve four questions.
+This file aims to teach how to solve problems involving large systems of equations using numerical methods.
+As part of the assignment, we were required to solve four questions.
 
 ## Summary of each question
-
-* Implement Jacobi and Gauss-Seidel algorithms for systems of equations solutions.
+* Implement the Jacobi and Gauss-Seidel algorithms for solving systems of equations.
 *
-* Use least squares method fo solving systems of equations.
-* Use Euler and Runge-Kutta's methods for solving systems of ODE's.
+* Utilize the least squares method to solve systems of equations.
+* Apply Euler's and Runge-Kutta's methods to solve systems of ordinary differential equations (ODEs).
