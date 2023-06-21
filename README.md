@@ -1,4 +1,4 @@
-# numericus-calculus
+# Numerical Calculus Assignment
 This is a file with the purpose of learning how to solve large system of equations problems with numerical solutions. 
 As part of the assignment, we had to solve four questions.
 
