@@ -1,5 +1,5 @@
-## Script para resolução da questão 1, item 1
-##
+%% Script para resolução da questão 1, item 1
+%%
 T = [0,0,0,0,0,0,0,0,0;
      1,0,0,0,0,0,0,0,0;
      0,1,0,0,0,0,0,0,0;
