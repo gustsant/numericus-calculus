@@ -1,3 +1,5 @@
+%% Script para resolução da questão 2
+%%
 tabela = [20, 0;
           23, 0;
           24, 0;
