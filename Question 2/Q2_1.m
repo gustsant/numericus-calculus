@@ -98,16 +98,16 @@ tabela = [20, 0;
           64, 1;
           65, 1;
           69, 1];
-##% Descomentar para resultados do item 2 (crtl+shift+r)
-##c = 1;
-##media = median(tabela(:,1));
-##
-##while c <= 100
-##  tabela(c,1) = tabela(c,1) - media;
-##  c = c + 1;
-##end
-##
-##median(tabela(:,1));
+%%% Descomentar para resultados do item 2 (crtl+shift+r)
+%%c = 1;
+%%media = median(tabela(:,1));
+%%
+%%while c <= 100
+%%  tabela(c,1) = tabela(c,1) - media;
+%%  c = c + 1;
+%%end
+%%
+%%median(tabela(:,1));
 
 x = 0.5;
 erro = 10^(-6);
