@@ -1,5 +1,5 @@
-%teste decomposição cholesky
-
+%% Script para resolução da questão 3
+%%
 % Matriz relacionada às válvulas
 A = [0.23, 0.08, 0.29, 0.16;
      0.93, 0.81, 0.63, 0.87;
