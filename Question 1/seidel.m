@@ -1,5 +1,5 @@
-## Algoritmo de Seidel
-##
+%% Algoritmo de Seidel
+%%
 function [x, k, iter2, x_ks] = seidel(A, b, D, L, U, xo, maxit)
     k = 0;
     x_ks = cell(maxit, 1);
