@@ -23,21 +23,21 @@ hist_temp = zeros([30 1]);
 
 while cont < lim
   % Calculando o próximo valor das velocidades
-  dv1 = der_v1(p1, p2, p3, m2, m3);  # Calculando v1
+  dv1 = der_v1(p1, p2, p3, m2, m3);  % Calculando v1
   k1 = h * dv1;
 
   dv1 = der_v1((p1 + k1), (p2 + k1), (p3 + k1), m2, m3);
   k2 = h * dv1;
   v1_n = v1 + (k1 + k2)/2;
 
-  dv2 = der_v2(p1, p2, p3, m1, m3);  # Calculando v2
+  dv2 = der_v2(p1, p2, p3, m1, m3);  % Calculando v2
   k1 = h * dv2;
 
   dv2 = der_v2(p1+k1, p2+k1, p3+k1, m2, m3);
   k2 = h * dv2;
   v2_n = v2 + (k1 + k2)/2;
 
-  dv3 = der_v3(p1, p2, p3, m2, m1);  # Calculando v3
+  dv3 = der_v3(p1, p2, p3, m2, m1);  % Calculando v3
   k1 = h * dv3;
 
   dv3 = der_v3(p1+k1, p2+k1, p3+k1, m2, m3);
@@ -58,8 +58,8 @@ while cont < lim
   p3 = p3_n;
 
   % Guardando esses valores para o gráfico
-  hist_p1(cont + 1, 1) = p1(1); # x
-  hist_p1(cont + 1, 2) = p1(2); # y
+  hist_p1(cont + 1, 1) = p1(1); % x
+  hist_p1(cont + 1, 2) = p1(2); % y
 
   hist_p2(cont + 1, 1) = p2(1);
   hist_p2(cont + 1, 2) = p2(2);
