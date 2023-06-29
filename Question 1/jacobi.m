@@ -1,5 +1,5 @@
-## Algoritmo de Jacobi
-##
+%% Algoritmo de Jacobi
+%%
 function [x, k, iter1, x_kj] = jacobi(A, b, D, L, U, xo, maxit)
     k = 0;
     x_kj = cell(maxit, 1);
