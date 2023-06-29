@@ -1,5 +1,5 @@
-## Script para resolução da questão 4, itens 1 e 2
-##
+%% Script para resolução da questão 4, itens 1 e 2
+%%
 m1 = 10;
 m2 = 20;
 m3 = 30;
@@ -76,5 +76,5 @@ disp('p3 = [');
 disp(p3);
 disp(']');
 
-# Plotando os gráficos
+% Plotando os gráficos
 plot(hist_p1(:,1),hist_p1(:,2),hist_p2(:,1),hist_p2(:,2),hist_p3(:,1),hist_p3(:,2));
