@@ -26,40 +26,36 @@ while cont < lim
   dv1 = der_v1(p1, p2, p3, m2, m3);  # Calculando v1
   k1 = h * dv1;
 
-  p1_aux = p1 + h * v1;
-  p2_aux = p2 + h * v2;
-  p3_aux = p3 + h * v3;
-
-  dv1 = der_v1_2(p1_aux, p2_aux, p3_aux, m2, m3, k1);
+  dv1 = der_v1((p1 + k1), (p2 + k1), (p3 + k1), m2, m3);
   k2 = h * dv1;
-  v1 = v1 + (k1 + k2)/2;
+  v1_n = v1 + (k1 + k2)/2;
 
   dv2 = der_v2(p1, p2, p3, m1, m3);  # Calculando v2
   k1 = h * dv2;
 
-  p1_aux = p1 + h * v1;
-  p2_aux = p2 + h * v2;
-  p3_aux = p3 + h * v3;
-
-  dv2 = der_v2_2(p1_aux, p2_aux, p3_aux, m2, m3, k1);
+  dv2 = der_v2(p1+k1, p2+k1, p3+k1, m2, m3);
   k2 = h * dv2;
-  v2 = v2 + (k1 + k2)/2;
+  v2_n = v2 + (k1 + k2)/2;
 
   dv3 = der_v3(p1, p2, p3, m2, m1);  # Calculando v3
   k1 = h * dv3;
 
-  p1_aux = p1 + h * v1;
-  p2_aux = p2 + h * v2;
-  p3_aux = p3 + h * v3;
-
-  dv3 = der_v3_2(p1_aux, p2_aux, p3_aux, m2, m3, k1);
+  dv3 = der_v3(p1+k1, p2+k1, p3+k1, m2, m3);
   k2 = h * dv3;
-  v3 = v3 + (k1 + k2)/2;
+  v3_n = v3 + (k1 + k2)/2;
 
   # Calculando o próximo valor das posições
-  p1 = p1 + h * v1;
-  p2 = p2 + h * v2;
-  p3 = p3 + h * v3;
+  p1_n = p1 + h * v1;
+  p2_n = p2 + h * v2;
+  p3_n = p3 + h * v3;
+
+  v1 = v1_n;
+  v2 = v2_n;
+  v3 = v3_n;
+
+  p1 = p1_n;
+  p2 = p2_n;
+  p3 = p3_n;
 
   # Guardando esses valores para o gráfico
   hist_p1(cont + 1, 1) = p1(1); # x
@@ -92,5 +88,3 @@ disp(']');
 
 # Plotando os gráficos
 plot(hist_p1(:,1),hist_p1(:,2),hist_p2(:,1),hist_p2(:,2),hist_p3(:,1),hist_p3(:,2));
-
-
