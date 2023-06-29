@@ -1,5 +1,5 @@
-## Script para resolução da questão 1, item 5
-##
+%% Script para resolução da questão 1, item 5
+%%
 T = eye(9);
 
 r = [2;1;0;1;0;0;0;0;5];
@@ -7,7 +7,7 @@ r = [2;1;0;1;0;0;0;0;5];
 y = 0.5;
 k = 0.5;
 
-#A e b
+%A e b
 A = (1 - y*k) * eye(9) - y * (1 - k) * T';
 b = k * r + (1 - k) * T' * r;
 
