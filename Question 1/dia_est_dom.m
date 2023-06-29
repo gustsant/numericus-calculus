@@ -1,5 +1,5 @@
-## Função que retorna 1 para matriz diagonal dominante
-##
+%% Função que retorna 1 para matriz diagonal dominante
+%%
 function [b] = dia_est_dom(A)
     n = length(A);
     b = 1;
