@@ -16,8 +16,8 @@ y = 0.5;
 k = 0.5;
 
 % Ax = b
-A = (1 - y*k)*eye(9) - y*(1 - k)*T';
-b = (k + (1 - k)*T')*r;
+A = (1 - y*k) * eye(9) - y * (1 - k) * T';
+b = k * r + (1 - k) * T' * r;
 
 % x = Bx + d
 % Calcular D (matriz que contém a diagonal de A)
